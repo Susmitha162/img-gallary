@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-areas: 
+                "img1 img2 img3"
+                "img4 img5 img6";
+        }
+        i1{
+            grid-area: img1;
+            
+        }
+        i2{
+            grid-area: img2;
+        }
+        i3{
+            grid-area: img3;
+        }
+        i4{
+            grid-area: img4;
+        }
+        i5{
+            grid-area: img5;
+        }
+        i6{
+            grid-area: img6;
+        }
+        img{
+            width: 70%;
+            height: 70%;
+            border: rgb(255, 86, 60) 2px solid;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(237, 25, 25, 0.5);
+        }
+        img:hover{
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+            border: black 2px solid;
+            box-shadow: 3px 0 20px rgb(0,0,0,0.6);
+        }
+        h1{
+            text-align: center;
+            color: royalblue;
+        }
+        h2{
+            text-align: center;
+            color: rgb(255, 0, 195);
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to my 7th mini project </h1>
+    <h2>image gallary</h2>
+    <div class="container">
+        <img src="images/rose1.jpg" alt="" class="i1">
+        <img src="images/rose2.jpg" alt="" class="i2">
+        <img src="images/rose3.jpg" alt="" class="i3">
+        <img src="images/rose4.jpg" alt=""
+        class="i4">
+        <img src="images/rose5.jpg" alt=""
+        class="i5">
+        <img src="images/rose6.jpg" alt=""
+        class="i6">
+    </div>
+</body>
+</html>
